@@ -2,6 +2,7 @@
 
 @extends('layouts.app')
 @section('content')
+    <section class="bg-dark">
         <div class="container">
             <div class="row">
                 @foreach ( $movies as $movie)
@@ -19,4 +20,5 @@
                 @endforeach
             </div>
         </div>
+    </section>
 @endsection

@@ -4,30 +4,30 @@ return [
     "nav" => [
         'home' => [
             'page' => 'Home',
+            'route' => 'home',
         ],
-        'home2' => [
-            'page' => 'Home',
+        'bestSeller' => [
+            'page' => 'I migliori film',
+            'route' => 'bestSeller',
         ],
-        'home3' => [
-            'page' => 'Home',
+        'price' => [
+            'page' => 'Price',
+            'route' => 'price',
         ],
-        'home4' => [
-            'page' => 'Home',
-        ],
-        'home5' => [
-            'page' => 'Home',
-        ],
-        'about' => [
-            'page' => 'About',
-        ],
-        'contatti' => [
-            'page' => 'Contatti',
+        'category' => [
+            'page' => 'Categorie',
             'subcategories' => [
                 [
-                    'email' => 'email1@example.com',
+                    'genres' => 'Azione',
                 ],
                 [
-                    'email' => 'email2@example.com',
+                    'genres' => 'Comedy',
+                ],
+                [
+                    'genres' => 'Tragico',
+                ],
+                [
+                    'genres' => 'Triller',
                 ],
             ],
         ],

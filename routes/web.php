@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\BestSeller;
+use App\Http\Controllers\PriceMovie;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,10 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/movie/{id}', [HomeController::class, 'show'])->name('show');
+
+
+
+Route::get('/bestSeller', [BestSeller::class, 'index'])->name('bestSeller');
+Route::get('/price', [PriceMovie::class, 'index'])->name('price');
+
+

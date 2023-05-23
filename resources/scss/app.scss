@@ -3,12 +3,46 @@
 
 @import '~bootstrap/scss/bootstrap';
 
-$fa-font-path: "../fonts/webfonts" !default;
+$fa-font-path: "../webfonts" !default;
 
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 @import "~@fortawesome/fontawesome-free/scss/regular";
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/brands";
+
+
+
+*{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+header{
+    nav{
+        .subcategories{
+            display: none;
+        }
+        .li-hover:hover{
+            .subcategories:hover{
+                display: block;
+            }
+            .subcategories{
+                position: absolute;
+                top: 40px;
+                left: 0;
+                display: block;
+                background-color: rgb(255, 255, 255);
+                z-index: 10000;
+            }
+        }
+
+    }
+
+}
 
 main{
 
@@ -17,4 +51,27 @@ main{
         object-fit: cover;
         object-position: top;
     }
+
+    #show-movie{
+        min-height: 350px;
+        .absolute{
+            position: absolute;
+            top: 80px;
+            left: 0;
+
+        }
+    }
 }
+
+
+@media (max-width: 768px) {
+
+    .text-white{
+        color: black !important;
+    }
+
+
+    .media-q-position div:first-child{
+        margin-top: 660px;
+    }
+  }
